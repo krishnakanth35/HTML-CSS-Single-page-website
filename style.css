@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.search {
+    float: right;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 50px;
+    margin-top: 8px;
+    margin-right: 10px;
+    font-size: 10px;
+}
+
+input[placeholder="Search.."] {
+    color: rgb(82, 175, 45);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(102, 158, 79);
+}
+
+p{
+    font-family: "Afacad Flux", serif;
+    font-weight: 100;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    padding: 0 20px;
+    font-family: "Afacad Flux", serif;
+    font-weight: 600;
+}
+
+.nav-links li a {
+    color: rgb(102, 158, 79);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav-links li:hover {
+    color: rgb(167, 209, 126);
+}
+
+
+
+h1, h2, h3, .label {
+    font-family: "Afacad Flux", serif;
+    font-weight: 100;
+    color: rgb(117, 165, 69);
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(181, 255, 106);
+    color: black;
+}
+
+.container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin: auto;
+}
+
+.farmer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    padding: 100px;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(45% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1.5);
+}
+
+.tile-image {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(100% - 20px);
+    }
+
+    #about {
+        font-size: 1.5em;
+    }
+
+    .about {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 10px;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about {
+        font-size: 1.2em;
+    }
+
+    .about {
+        font-size: 0.9em;
+        margin: 0 5px;
+    }
+}
+
+#about, #products, #contact {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.about {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 0 20px;
+    text-align: justify;
+    box-shadow: 0 2px 5px rgba(1, 0, 0, 2.5);
+    padding: 20px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+input[type=text], input[type=tel], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(117, 165, 69);
+    border-radius: 4px;
+    font-family: "Afacad Flux", serif;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: "Afacad Flux", serif;
+    text-align: center;
+    margin-left: 50%;
+}
+
+input[type=submit]:hover {
+    background-color: #88bb8b;
+    color: black;
+}
+
+.container02 {
+    border-radius: 5px;
+    background-color: #adeeb5a4;
+    padding: 60px;
+}
+
+.col-25, .col-75 {
+    float: left;
+    width: 100%;
+    margin-top: 6px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-footer {
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #575454;
+}
+
+.main-footer ul {
+    list-style: none;
+}
+
+.main-footer h2, footer a {
+    color: #fcf1f1;
+}
+
+.main-footer ul li a {
+    color: #ece9e9cc;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #141414;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Afacad Flux", serif;
+}
+
+.quick{
+    font-family: "Afacad Flux", serif;
+}
+
+address, .contact-details li a, .contact-details .fa {
+    color: #f1f1f1;
+}
+
+@media only screen and (max-width: 749px) {
+    .main-footer, .container02 {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .contact-details li {
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 750px) {
+    .col-25 {
+        width: 25%;
+    }
+
+    .col-75 {
+        width: 75%;
+    }
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner-content p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+}
+.reachus{
+    color: rgb(135, 191, 255);
+}
